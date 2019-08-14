@@ -1,0 +1,60 @@
+package com.movie.model.dao;
+
+import java.sql.SQLException;
+import java.util.List;
+import java.util.Map;
+
+import com.ibatis.sqlmap.client.SqlMapClient;
+import com.movie.model.vo.MovieInfo;
+import com.movie.model.vo.Rental;
+import com.movie.model.vo.User;
+
+import iba.MySqlMapClient;
+
+public class MovieDAO {
+	SqlMapClient sqlMap;
+
+	public MovieDAO() {
+		sqlMap = MySqlMapClient.getSqlMapInstance();
+	}
+	
+	public List<MovieInfo> selectAll() throws SQLException { //영화정보 전체
+		return sqlMap.queryForList("movie.selectAll");
+	}
+	
+	public List<MovieInfo> selectInfo(int no) throws SQLException {//영화정보 한개
+		return sqlMap.queryForList("movie.selectinfo",no);
+	}
+	
+	public String selectLogin(User user) throws SQLException {
+		System.out.println(user.toString());
+		return (String)sqlMap.queryForObject("movie.selectlogin",user);
+
+	}
+	
+	public void insertUser(User user) throws SQLException {
+		sqlMap.insert("movie.insertuser",user);
+		System.out.println("insert");
+	}
+	
+	public int updateRental(int no) throws SQLException {
+		return sqlMap.update("movie.rentalAmount",no);
+	}
+	
+	public void insertRental(Rental rental) throws SQLException {
+		sqlMap.insert("movie.insertRental",rental);
+		
+	}
+	
+	public List<String> selectRental(String userid) throws SQLException {
+		return sqlMap.queryForList("movie.selectRental",userid);
+	}
+	
+	public int deleteRental(int rentid) {
+		return sqlMap.delete("movie.deleteRental",rentid);
+	}
+	
+
+	
+	
+}

@@ -1,0 +1,27 @@
+package com.movie.model.dao;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import com.ibatis.sqlmap.client.SqlMapClient;
+import com.movie.model.vo.MovieInfo;
+
+import iba.MySqlMapClient;
+
+public class MovieDAO {
+	SqlMapClient sqlMap;
+
+	public MovieDAO() {
+		sqlMap = MySqlMapClient.getSqlMapInstance();
+	}
+	
+	public List<MovieInfo> selectAll() throws SQLException { //영화정보 전체
+		return sqlMap.queryForList("movie.selectAll");
+	}
+	
+	public List<MovieInfo> selectInfo() throws SQLException {//영화정보 한개
+		return sqlMap.queryForList("movie.selectinfo");
+	}
+	
+	
+}

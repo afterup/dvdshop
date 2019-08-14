@@ -1,0 +1,23 @@
+package com.movie.model.dao;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import com.ibatis.sqlmap.client.SqlMapClient;
+import com.movie.model.vo.MovieInfo;
+
+import iba.MySqlMapClient;
+
+public class AdminDAO {
+
+	SqlMapClient sqlMap;
+
+	public AdminDAO() {
+		sqlMap = MySqlMapClient.getSqlMapInstance();
+	}
+	
+
+
+	
+	
+}

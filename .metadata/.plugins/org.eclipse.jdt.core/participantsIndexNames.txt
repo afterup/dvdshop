@@ -1,0 +1,39 @@
+INDEX VERSION 1.131
+C:\Users\Playdata\Desktop\DVD shop\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\432288405.index
+\shop_project\src
+C:\Users\Playdata\Desktop\DVD shop\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\262424416.index
+\struts\src
+C:\Users\Playdata\Desktop\DVD shop\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3786024524.index
+\struts\src
+C:\Users\Playdata\Desktop\DVD shop\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1724975954.index
+\shop_project\src
+C:\Users\Playdata\Desktop\DVD shop\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2829776764.index
+\struts\src
+C:\Users\Playdata\Desktop\DVD shop\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3627012641.index
+\struts\src
+C:\Users\Playdata\Desktop\DVD shop\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3389545769.index
+\shop_project\src
+C:\Users\Playdata\Desktop\DVD shop\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4202366661.index
+\shop_project\src
+C:\Users\Playdata\Desktop\DVD shop\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\591862279.index
+\shop_project\src
+C:\Users\Playdata\Desktop\DVD shop\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1103712841.index
+\struts\src
+C:\Users\Playdata\Desktop\DVD shop\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3473258765.index
+\struts\src
+C:\Users\Playdata\Desktop\DVD shop\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2527925978.index
+\struts\src
+C:\Users\Playdata\Desktop\DVD shop\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\546204581.index
+\struts\src
+C:\Users\Playdata\Desktop\DVD shop\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2671912465.index
+\shop_project\src
+C:\Users\Playdata\Desktop\DVD shop\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\938326303.index
+\struts\src
+C:\Users\Playdata\Desktop\DVD shop\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2274452660.index
+\struts\src
+C:\Users\Playdata\Desktop\DVD shop\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\832808646.index
+\struts\src
+C:\Users\Playdata\Desktop\DVD shop\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3249032960.index
+\struts\src
+C:\Users\Playdata\Desktop\DVD shop\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2144252911.index
+\struts\src

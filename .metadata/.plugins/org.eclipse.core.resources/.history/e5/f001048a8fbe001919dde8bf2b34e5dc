@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" 
+       "http://www.ibatis.com/dtd/sql-map-2.dtd" >
+<sqlMap namespace="movie">
+	<typeAlias alias="MovieMap" type="java.util.HashMap" />
+	<typeAlias alias="user" type="com.movie.model.vo.User" />
+	<typeAlias alias="rental" type="com.movie.model.vo.Rental" />
+
+	<select id="selectAll" resultClass="MovieMap">
+		SELECT * FROM movieInfo
+	</select>
+
+	<select id="selectinfo" resultClass="MovieMap"
+		parameterClass="int">
+		SELECT * FROM movieInfo WHERE movieid=#no#
+	</select>
+
+	<select id="selectlogin" parameterClass="user" resultClass="String">
+		SELECT id FROM movieuser WHERE id = #id# AND pass = #pass#
+	</select>
+	
+	<insert parameterClass="user" id="insertuser">
+		insert into movieuser (id,pass,email,address) values
+		(#id#,#pass#,#email#,#address#)
+	</insert>
+	
+	<update id= "rentalAmount" parameterClass="int">
+		update movieinfo set dvdamount = 
+		((select dvdamount from movieinfo where movieid=#movieid#)-1)
+		where movieid = #movieid#
+	</update>
+	
+	<insert id="insertRental" parameterClass="rental">
+		insert into rental values (rental_seq.nextval,to_date(sysdate,'YY-MM-DD'),'N',#userid#,#movieid#)
+	</insert> 
+	
+ 	<select id="selectRental" parameterClass="String" resultClass="HashMap">
+		select rentid, rentdate, returnYN, id,movieid, movienm 
+		from rental INNER JOIN movieinfo USING(movieid) where id = #id#
+	</select> 
+	
+	<delete id="updateReturn" parameterClass="int">
+		update rental set returnyn = 'Y' where rentid = #rentid#
+	</delete>
+	
+	
+	<select id="returnYN" parameterClass="rental" resultClass="String">
+		select returnYN from rental where id=#userid# AND rentid=#rentid#
+	</select> <!-- 삭제할때 체크할 사항 -->
+	
+	
+
+</sqlMap>
+
+
+
+

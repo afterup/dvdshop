@@ -1,0 +1,46 @@
+CREATE TABLE movieInfo
+(
+    movieid         NUMBER     NOT NULL, 
+    movienm         VARCHAR2(50)     NOT NULL, 
+    movieimg        VARCHAR2(300)    NULL, 
+    moviedesc       VARCHAR2(500)    NULL, 
+    genrenm         VARCHAR2(20)     NOT NULL, 
+    supervison      VARCHAR2(20)     NOT NULL, 
+    watchGradeNm    VARCHAR2(20)     NOT NULL, 
+    dvdamount       NUMBER              NOT NULL, 
+    CONSTRAINT MOVIEINFO_PK PRIMARY KEY (movieid)
+);
+
+CREATE SEQUENCE movie_seq 
+	START WITH 1
+	INCREMENT BY 1
+	NOCYCLE
+	NOCACHE;
+
+
+CREATE TABLE movieuser
+(
+    id         VARCHAR2(30)     NOT NULL, 
+    pass       VARCHAR2(50)     NOT NULL, 
+    email      VARCHAR2(200)    NOT NULL, 
+    address    VARCHAR2(200)    NOT NULL, 
+    CONSTRAINT MOVIEUSER_PK PRIMARY KEY (id)
+);
+
+
+CREATE TABLE rental
+(
+    rentid    NUMBER    NOT NULL, 
+    rentdate    Date    NOT NULL, 
+    returnYN    VARCHAR2(20)    NULL, 
+    id          VARCHAR2(30) constraint rental_userid_FK references movieuser(id) on delete cascade, 
+    movieid     NUMBER constraint movie_movieid_FK references movieinfo(movieid) on delete cascade,
+    CONSTRAINT RENTAL_PK PRIMARY KEY (rentid)
+);
+
+CREATE SEQUENCE rental_seq 
+	START WITH 1
+	INCREMENT BY 1
+	NOCYCLE
+	NOCACHE;
+

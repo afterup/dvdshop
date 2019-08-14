@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" 
+       "http://www.ibatis.com/dtd/sql-map-2.dtd" >
+<sqlMap namespace="admin">
+	<typeAlias alias="AdminMap" type="java.util.HashMap" />
+	<typeAlias alias="user" type="com.movie.model.vo.User" />
+	<typeAlias alias="movieInfo" type="com.movie.model.vo.MovieInfo" />
+
+	<select id="selectAll" resultClass="AdminMap">
+		SELECT movieid,movienm,dvdamount,genrenm,watchgradenm FROM movieInfo
+	</select>
+
+ 	<update id="movieUpdate" parameterClass="movieInfo">
+		UPDATE movieInfo SET movienm=#movienm#,moviedesc=#moviedesc#,genrenm=#genrenm#,supervison=#supervison#,watchGradeNm=#watchGradeNm#,dvdamount=#dvdamount#
+		WHERE movieid=#movieid#
+	</update>
+	
+</sqlMap>
+
+
+
+

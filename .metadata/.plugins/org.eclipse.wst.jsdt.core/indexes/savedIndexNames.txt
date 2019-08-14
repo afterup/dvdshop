@@ -1,0 +1,9 @@
+INDEX VERSION 1.4+C:\Users\Playdata\Desktop\DVD shop\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3920509701.index
+2548205564.index
+3968681166.index
+598900536.index
+3406929571.index
+1244774603.index
+567419290.index
+432288405.index

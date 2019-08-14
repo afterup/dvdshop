@@ -1,0 +1,15 @@
+package com.movie.model.vo;
+
+public class MovieInfo {
+	private int movieid;
+	private String movienm;
+	private String movieimg;
+	private String moviedesc;
+	private String genrenm;
+	private String supervison;
+	private String watchGradeNm;
+	private int dvdamount;
+	
+
+
+}

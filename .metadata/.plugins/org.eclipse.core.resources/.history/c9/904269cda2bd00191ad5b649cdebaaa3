@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 부트스트랩 css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- 사용자 css-->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+    </style>
+</head>
+
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">DVDShop</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.jsp">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Movie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Mypage</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Cart</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main-->
+
+    <div class="container">
+        <div class="">
+            <div class="panel panel-successs">
+                <div class="panel-heading">
+                    <h3 class="mb-3 text-center">Login</h3>
+                </div>
+                <div class="panel-body">
+                    <form id="login-form">
+                        <input type="text" class="form-control mb-4" name="username" placeholder="Username" autofocus>
+                        <input type="password" class="form-control mb-4" name="password" placeholder="Password">
+                        <button type="submit" class="form-control btn btn-primary">로그인</button>
+                    </form>
+                    <a href="">아이디/비밀번호 찾기</a><br>
+                    <a href="">회원가입</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    DVDSHOP
+                    <hr class="light">
+                    <p>02-0000-0000</p>
+                    <p>uptohai@gmail.com</p>
+                    <p>City, State</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <p>Monday</p>
+                    <p>Tuesday</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <hr class="light">
+                <h5 class="text-center">&copy; dvdshop.com</h5>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 부트스트랩 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+
+</html>

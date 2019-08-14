@@ -1,0 +1,33 @@
+CREATE TABLE movieInfo
+(
+    movieid         VARCHAR2(20)     NOT NULL, 
+    movienm         VARCHAR2(50)     NOT NULL, 
+    movieimg        VARCHAR2(300)    NULL, 
+    moviedesc       VARCHAR2(500)    NULL, 
+    genrenm         VARCHAR2(20)     NOT NULL, 
+    supervison      VARCHAR2(20)     NOT NULL, 
+    watchGradeNm    VARCHAR2(20)     NOT NULL, 
+    dvdamount       NUMBER              NOT NULL, 
+    CONSTRAINT MOVIEINFO_PK PRIMARY KEY (movieid)
+);
+
+CREATE SEQUENCE movie_seq 
+	START WITH 1
+	INCREMENT BY 1
+	NOCYCLE
+	NOCACHE;
+
+INSERT INTO movieInfo (movieid, movienm, genrenm, supervison, watchGradeNm, dvdamount) 
+	   VALUES (입고_seq.nextval,'알라딘','동화','감독','ALL','3');
+
+
+CREATE TABLE movieuser
+(
+    id         VARCHAR2(30)     NOT NULL, 
+    pass       VARCHAR2(50)     NOT NULL, 
+    email      VARCHAR2(200)    NOT NULL, 
+    address    VARCHAR2(200)    NOT NULL, 
+    CONSTRAINT MOVIEUSER_PK PRIMARY KEY (id)
+);
+
+

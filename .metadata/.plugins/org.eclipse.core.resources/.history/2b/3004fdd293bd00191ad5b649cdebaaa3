@@ -1,0 +1,136 @@
+package com.movie.model.vo;
+
+public class MovieInfo {
+	private String movieid;
+	private String movienm;
+	private String movieimg;
+	private String moviedesc;
+	private String genrenm;
+	private String supervison;
+	private String actors;
+	private String actornm;
+	private String cast;
+	private String watchGradeNm;
+	private int dvdamount;
+	
+	public MovieInfo(String movieid, String movienm, String movieimg, String moviedesc, String genrenm,
+			String supervison, String actors, String actornm, String cast, String watchGradeNm, int dvdamount) {
+		super();
+		this.movieid = movieid;
+		this.movienm = movienm;
+		this.movieimg = movieimg;
+		this.moviedesc = moviedesc;
+		this.genrenm = genrenm;
+		this.supervison = supervison;
+		this.actors = actors;
+		this.actornm = actornm;
+		this.cast = cast;
+		this.watchGradeNm = watchGradeNm;
+		this.dvdamount = dvdamount;
+	}
+	
+	
+
+	@Override
+	public String toString() {
+		return "MovieInfo [movieid=" + movieid + ", movienm=" + movienm + ", movieimg=" + movieimg + ", moviedesc="
+				+ moviedesc + ", genrenm=" + genrenm + ", supervison=" + supervison + ", actors=" + actors
+				+ ", actornm=" + actornm + ", cast=" + cast + ", watchGradeNm=" + watchGradeNm + ", dvdamount="
+				+ dvdamount + "]";
+	}
+
+
+
+	public String getMovieid() {
+		return movieid;
+	}
+
+	public void setMovieid(String movieid) {
+		this.movieid = movieid;
+	}
+
+	public String getMovienm() {
+		return movienm;
+	}
+
+	public void setMovienm(String movienm) {
+		this.movienm = movienm;
+	}
+
+	public String getMovieimg() {
+		return movieimg;
+	}
+
+	public void setMovieimg(String movieimg) {
+		this.movieimg = movieimg;
+	}
+
+	public String getMoviedesc() {
+		return moviedesc;
+	}
+
+	public void setMoviedesc(String moviedesc) {
+		this.moviedesc = moviedesc;
+	}
+
+	public String getGenrenm() {
+		return genrenm;
+	}
+
+	public void setGenrenm(String genrenm) {
+		this.genrenm = genrenm;
+	}
+
+	public String getSupervison() {
+		return supervison;
+	}
+
+	public void setSupervison(String supervison) {
+		this.supervison = supervison;
+	}
+
+	public String getActors() {
+		return actors;
+	}
+
+	public void setActors(String actors) {
+		this.actors = actors;
+	}
+
+	public String getActornm() {
+		return actornm;
+	}
+
+	public void setActornm(String actornm) {
+		this.actornm = actornm;
+	}
+
+	public String getCast() {
+		return cast;
+	}
+
+	public void setCast(String cast) {
+		this.cast = cast;
+	}
+
+	public String getWatchGradeNm() {
+		return watchGradeNm;
+	}
+
+	public void setWatchGradeNm(String watchGradeNm) {
+		this.watchGradeNm = watchGradeNm;
+	}
+
+	public int getDvdamount() {
+		return dvdamount;
+	}
+
+	public void setDvdamount(int dvdamount) {
+		this.dvdamount = dvdamount;
+	}
+	
+	
+	
+	
+
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.annotation.Resources"/>
+<fullyQualifiedTypeName name="com.encore.db.iba.MySqlMapClient"/>
+<fullyQualifiedTypeName name="com.ibatis.sqlmap.client.SqlMapClient"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="org.apache.tomcat.jni.User"/>
+<fullyQualifiedTypeName name="com.movie.model.vo.User"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="com.movie.model.vo.Rental"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.movie.model.dao.MovieDAO"/>
+<fullyQualifiedTypeName name="iba.MySqlMapClient"/>
+<fullyQualifiedTypeName name="com.movie.model.dao.AdminDAO"/>
+<fullyQualifiedTypeName name="com.movie.model.vo.MovieInfo"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+</qualifiedTypeNameHistroy>

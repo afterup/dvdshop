@@ -1,0 +1,22 @@
+package com.movie.model.dao;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.movie.model.vo.MovieInfo;
+
+public class MovieService {
+	
+	private MovieDAO dao;
+	
+	public MovieService() {
+		dao = new MovieDAO();
+	}
+	
+	public List<MovieInfo> getAllMovie() throws SQLException{
+		List<MovieInfo> movie = null;
+		movie = dao.selectAll();
+		return movie;
+	}
+}
